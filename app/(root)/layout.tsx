@@ -9,9 +9,9 @@ const LobbyLayout: React.FC<LobbyLayoutProps> = ({ children }) => {
   return (
     <div className='min-h-screen flex flex-col items-center'>
         <Navbar />
-        <main>
+        <section>
             {children}
-        </main>
+        </section>
         <Footer />
     </div>
   )
