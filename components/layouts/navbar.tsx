@@ -19,7 +19,7 @@ const Navbar = () => {
 
                 <SignedIn>
                   <Button>
-                    <Link href={'/dashboard'}>Dashboard</Link>
+                    <Link href={'/dashboard/stores'}>Dashboard</Link>
                   </Button>
                   <UserButton />
                 </SignedIn>

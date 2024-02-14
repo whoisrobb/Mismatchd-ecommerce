@@ -15,7 +15,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import { siteConfig } from "@/lib/dummy-nav";
+import { sidebarConfig, siteConfig } from "@/lib/nav-config";
 import Link from "next/link";
 
   
@@ -45,8 +45,17 @@ const MobileNav = () => {
                                 </div>))}
                             </AccordionItem>
 
+                            <AccordionItem value="item-2">
+                                <AccordionTrigger className="capitalize text-secondary-foreground">my account</AccordionTrigger>
+                                {sidebarConfig.map((nav) => (
+                                    <AccordionContent key={nav.title}>
+                                        <Link href={nav.href} className="text-muted-foreground focus:text-secondary-foreground capitalize">{nav.title}</Link>
+                                    </AccordionContent>
+                                ))}
+                            </AccordionItem>
+
                             {siteConfig.mainNav.map((nav, index) => (
-                            <AccordionItem value={`item-${index+2}`} key={index}>
+                            <AccordionItem value={`item-${index+3}`} key={index}>
                                 <AccordionTrigger className="capitalize text-secondary-foreground">{nav.title}</AccordionTrigger>
                                 {nav.items.map((nav, index) => (
                                 <div className="" key={index}>

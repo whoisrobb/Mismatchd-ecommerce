@@ -1,5 +1,17 @@
 import { productCategories } from "./data-temp";
 
+
+export const sidebarConfig = [
+  {
+    title: 'account',
+    href: '/dashboard/account'
+  },
+  {
+    title: 'stores',
+    href: '/dashboard/stores'
+  },
+]
+
 export const siteConfig = {
     name: "Skateshop",
     description:

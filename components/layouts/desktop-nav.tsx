@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 // import Link from "next/link";
-import { siteConfig } from "@/lib/dummy-nav";
+import { siteConfig } from "@/lib/nav-config";
   
 
 const DesktopNav = () => {
