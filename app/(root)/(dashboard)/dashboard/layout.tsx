@@ -13,7 +13,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
       <div className="hidden lg:block md:block w-[30%] h-full">
         <SidebarNav items={sidebarConfig} />
       </div>
-      <div className="px-12">
+      <div className="px-12 w-full">
         {children}
       </div>
     </div>

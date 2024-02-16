@@ -1,7 +1,13 @@
+import DashboardShell from "@/components/layouts/dashboard-shell";
 
 const Stores = () => {
   return (
-    <div>Stores</div>
+    <DashboardShell
+      title="Stores"
+      subtitle="Manage your stores."
+    >
+      <p>wsgood</p>
+    </DashboardShell>
   )
 }
 

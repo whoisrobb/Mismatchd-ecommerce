@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { ClerkProvider } from '@clerk/nextjs'
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
+import { EdgeStoreProvider } from "@/lib/edgestore";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,9 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
           >
-            {children}
+            <EdgeStoreProvider>
+              {children}
+            </EdgeStoreProvider>
           </ThemeProvider>
         </body>
       </ClerkProvider>

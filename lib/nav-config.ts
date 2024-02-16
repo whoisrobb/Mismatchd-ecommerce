@@ -7,6 +7,10 @@ export const sidebarConfig = [
     href: '/dashboard/account'
   },
   {
+    title: 'site',
+    href: '/dashboard/site'
+  },
+  {
     title: 'stores',
     href: '/dashboard/stores'
   },
